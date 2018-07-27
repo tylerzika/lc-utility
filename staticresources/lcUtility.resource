@@ -21,6 +21,9 @@ window.lcUtility = (function() {
         },
         lowerFirstLetter: function(string) {
             return string.charAt(0).toLowerCase() + string.slice(1);
+        },
+        log: function(theProxy) {
+            console.log(JSON.parse(JSON.stringify(theProxy)));
         }
     };
 }());
